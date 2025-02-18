@@ -102,6 +102,7 @@ ALLOWED_HOSTS = [
     'django-1-a5e8.onrender.com',
      '127.0.0.1',
      'saurabhrealm.cloud',
+     'localhost'
     
     # Add other allowed hosts if necessary
 ]
