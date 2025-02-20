@@ -105,9 +105,10 @@
                 e.preventDefault();
                 $('.error-message').text(''); 
                 var formData = $(this).serialize();
+                var aboutusUrl = "{% url 'aboutus' %}";
                 $.ajax({
                     type: 'POST',
-                    url: '',
+                    url: aboutusUrl,
                     data: formData,
                     beforeSend: function() {
                         $('#status').show();

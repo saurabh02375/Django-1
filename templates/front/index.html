@@ -1,4 +1,3 @@
-
 {% extends "front/layout/base.html" %}
 
 {% block title %} Home {% endblock %}
@@ -11,132 +10,131 @@
 
 
 <section class="section h-100vh jarallax" data-jarallax='{"speed": 0.2}'
-style="background-image: url('static/front/images/home-bg.jpg');" id="home">
-<div class="bg-overlay"></div>
-<div class="container position-relative z-index">
-    <div class="row justify-content-center">
-        <div class="col-lg-12">
-            <div class="text-white text-center"> 
-                <h4>Hello & Welcome</h4>
-                <h1 class="header_title mb-0 mt-3">I Am <span class="element fw-bold"
-                        data-elements="{{home.title}}.,{{home.description}}."></span></h1>
-                <ul class="social_home list-unstyled text-center pt-4">
-              
-                    <li class="list-inline-item"><a href="javascript:void(0)"><i
-                                class="mdi mdi-linkedin"></i></a></li>
-                </ul>
-                <div class="header_btn">
-                    <a href="javascript:void(0)" class="btn btn-outline-custom btn-rounded mt-4">Know More!</a>
+    style="background-image: url('static/front/images/home-bg.jpg');" id="home">
+    <div class="bg-overlay"></div>
+    <div class="container position-relative z-index">
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <div class="text-white text-center">
+                    <h4>Hello & Welcome</h4>
+                    <h1 class="header_title mb-0 mt-3">I Am <span class="element fw-bold"
+                            data-elements="{{home.title}}.,{{home.description}}."></span></h1>
+                    <ul class="social_home list-unstyled text-center pt-4">
+
+                        <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-linkedin"></i></a>
+                        </li>
+                    </ul>
+                    <div class="header_btn">
+                        <a href="javascript:void(0)" class="btn btn-outline-custom btn-rounded mt-4">Know More!</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="scroll_down">
-    <a href="#about" class="scroll">
-        <i class="mbri-arrow-down text-white"></i>
-    </a>
-</div>
+    <div class="scroll_down">
+        <a href="#about" class="scroll">
+            <i class="mbri-arrow-down text-white"></i>
+        </a>
+    </div>
 </section>
 <section class="section" id="about">
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-lg-12">
-            <div class="text-center mx-auto section-main-title">
-                <h2><span class="fw-bold">{{aboutus.title}} </span></h2>
-                <div class="main-title-border">
-                    <i class="mdi mdi-asterisk"></i>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <div class="text-center mx-auto section-main-title">
+                    <h2><span class="fw-bold">{{aboutus.title}} </span></h2>
+                    <div class="main-title-border">
+                        <i class="mdi mdi-asterisk"></i>
+                    </div>
+                    <p class="text-muted mx-auto mt-2">{{aboutus.description}}.</p>
                 </div>
-                <p class="text-muted mx-auto mt-2">{{aboutus.description}}.</p>
             </div>
         </div>
     </div>
-</div>
 </section>
 <section class="section" id="award">
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-lg-12">
-            <div class="text-center mx-auto section-main-title">
-                <h2><span class="fw-bold">{{honors.title}} </span> </h2>
-                <div class="main-title-border">
-                    <i class="mdi mdi-asterisk"></i>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <div class="text-center mx-auto section-main-title">
+                    <h2><span class="fw-bold">{{honors.title}} </span> </h2>
+                    <div class="main-title-border">
+                        <i class="mdi mdi-asterisk"></i>
+                    </div>
+                    <p class="text-muted mx-auto mt-2">{{honors.description}}.. .</p>
                 </div>
-                <p class="text-muted mx-auto mt-2">{{honors.description}}.. .</p>
             </div>
         </div>
-    </div>
-    <div class="row mt-4 pt-4">
-        <div class="col-lg-12">
-            <div>
-                <img src="{{ MEDIA_URL }}{{ honors.image }}" alt="" class="img-fluid mx-auto d-block">
-            </div>
-            <div class="text-center about-detail mx-auto mt-5">
-                <h3 class="mb-3"><span class="fw-bold text-custom">{{honors.title2}}</span></h3>
-                <ul class="mb-0 list-inline text-center about-work">
-                    <li class="list-inline-item me-0 text-muted">{{honors.title3}} </li>
-                    <li class="list-inline-item me-0 text-muted">{{honors.title4}}</li>
-                    <li class="list-inline-item me-0 text-muted"></li>
-                </ul>
-                <p class="text-muted mt-3">{{honors.description2}}.</p>
+        <div class="row mt-4 pt-4">
+            <div class="col-lg-12">
+                <div>
+                    <img src="{{ MEDIA_URL }}{{ honors.image }}" alt="" class="img-fluid mx-auto d-block">
+                </div>
+                <div class="text-center about-detail mx-auto mt-5">
+                    <h3 class="mb-3"><span class="fw-bold text-custom">{{honors.title2}}</span></h3>
+                    <ul class="mb-0 list-inline text-center about-work">
+                        <li class="list-inline-item me-0 text-muted">{{honors.title3}} </li>
+                        <li class="list-inline-item me-0 text-muted">{{honors.title4}}</li>
+                        <li class="list-inline-item me-0 text-muted"></li>
+                    </ul>
+                    <p class="text-muted mt-3">{{honors.description2}}.</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="row mt-5">
-        <div class="col-lg-6">
-            <div class="progress-bars skill-custom">
+        <div class="row mt-5">
+            <div class="col-lg-6">
+                <div class="progress-bars skill-custom">
                     {% for item in skills %}
-                        {% if forloop.counter <= 5 %}
-                <div class="clearfix">
-                    <div class="text-dark fw-bold float-left">{{item.title}}</div>
-                    <div class="text-muted float-right">80%</div>
+                    {% if forloop.counter <= 5 %} <div class="clearfix">
+                        <div class="text-dark fw-bold float-left">{{item.title}}</div>
+                        <div class="text-muted float-right">80%</div>
                 </div>
                 <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="0"
-                        aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100"></div>
                 </div>
-                     {% endif %}
+                {% endif %}
                 {% endfor %}
             </div>
         </div>
         <div class="col-lg-6">
             <div class="progress-bars skill-custom">
                 {% for item in skills %}
-                    {% if forloop.counter > 5 %}
+                {% if forloop.counter > 5 %}
 
                 <div class="clearfix">
                     <div class="text-dark fw-bold float-left">{{item.title}}</div>
                     <div class="text-muted float-right">96%</div>
                 </div>
                 <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 86%" aria-valuenow="0"
-                        aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" role="progressbar" style="width: 86%" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100"></div>
                 </div>
-                    {% endif %}
+                {% endif %}
                 {% endfor %}
             </div>
         </div>
     </div>
-</div>
+    </div>
 </section>
 <section class="section" id="education">
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-lg-12">
-            <div class="text-center mx-auto section-main-title">
-                <h2><span class="fw-bold">Recent Education </span></h2>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <div class="text-center mx-auto section-main-title">
+                    <h2><span class="fw-bold">Recent Education </span></h2>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="row mt-4 pt-4">
-        <div class="col-lg-5">
-            <div class="cv_edu_exp mt-3">
-                {% for item in recenteducation %}
-                <div class="cv_edu_exp_box mt-4">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="cv_edu_exp_year fw-bold text-custom position-relative">
-                                {{item.title}}</div>
+        <div class="row mt-4 pt-4">
+            <div class="col-lg-5">
+                <div class="cv_edu_exp mt-3">
+                    {% for item in recenteducation %}
+                    <div class="cv_edu_exp_box mt-4">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="cv_edu_exp_year fw-bold text-custom position-relative">
+                                    {{item.title}}</div>
                             </div>
                             <div class="cb_edu_exp_detail">
                                 <h4>{{item.title2}}</h4>
@@ -149,42 +147,41 @@ style="background-image: url('static/front/images/home-bg.jpg');" id="home">
             </div>
         </div>
     </div>
-</div>
+    </div>
 </section>
 <section class="section" id="experiance">
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-lg-12">
-            <div class="text-center mx-auto section-main-title">
-                <h2><span class="fw-bold"> Experiance</span></h2>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <div class="text-center mx-auto section-main-title">
+                    <h2><span class="fw-bold"> Experiance</span></h2>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="row mt-4 pt-4">
-        <div class="col-lg-5">
-            <div class="cv_edu_exp mt-3">
-                {% for items in experience %}
-                    {% if forloop.counter < 2 %}
-                <div class="cv_edu_exp_box mt-4">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="cv_edu_exp_year fw-bold text-custom position-relative">
-                                {{items.title}}</div>
-                            <div class="cb_edu_exp_detail">
-                                <h4>{{items.title2}} </h4>
-                                <p class="cv_desc mb-0">{{items.description}} .</p>
+        <div class="row mt-4 pt-4">
+            <div class="col-lg-5">
+                <div class="cv_edu_exp mt-3">
+                    {% for items in experience %}
+                    {% if forloop.counter < 2 %} <div class="cv_edu_exp_box mt-4">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="cv_edu_exp_year fw-bold text-custom position-relative">
+                                    {{items.title}}</div>
+                                <div class="cb_edu_exp_detail">
+                                    <h4>{{items.title2}} </h4>
+                                    <p class="cv_desc mb-0">{{items.description}} .</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
                 </div>
-                    {% endif %}
+                {% endif %}
                 {% endfor %}
             </div>
         </div>
         <div class="col-lg-5 offset-lg-2">
             <div class="cv_edu_exp mt-3">
                 {% for items in experience %}
-                     {% if forloop.counter > 1 %}
+                {% if forloop.counter > 1 %}
                 <div class="cv_edu_exp_box mt-4">
                     <div class="row">
                         <div class="col-lg-12">
@@ -204,97 +201,97 @@ style="background-image: url('static/front/images/home-bg.jpg');" id="home">
             </div>
         </div>
     </div>
-</div>
+    </div>
 </section>
 <section class="section" id="project">
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-lg-12">
-            <div class="text-center mx-auto section-main-title">
-                <h2><span class="fw-bold"> Project</span></h2>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <div class="text-center mx-auto section-main-title">
+                    <h2><span class="fw-bold"> Project</span></h2>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="row mt-4 pt-4">
-        <div class="col-lg-5">
-            <div class="cv_edu_exp mt-3">
+        <div class="row mt-4 pt-4">
+            <div class="col-lg-5">
+                <div class="cv_edu_exp mt-3">
 
-                {% for item in project %}
-                {% if forloop.counter0|divisibleby:2 %}
-                <div class="cv_edu_exp_box mt-4">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="cv_edu_exp_year fw-bold text-custom position-relative">
-                                <a href="{{item.url}}" > Link</a> </div>
-                            <div class="cb_edu_exp_detail">
-                                <h4>{{item.title}} </h4>  
-                                {{ item.description|safe }} 
+                    {% for item in project %}
+                    {% if forloop.counter0|divisibleby:2 %}
+                    <div class="cv_edu_exp_box mt-4">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="cv_edu_exp_year fw-bold text-custom position-relative">
+                                    <a href="{{item.url}}"> Link</a>
+                                </div>
+                                <div class="cb_edu_exp_detail">
+                                    <h4>{{item.title}} </h4>
+                                    {{ item.description|safe }}
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
                     {% endif %}
+                    {% endfor %}
+
+                </div>
+            </div>
+            <div class="col-lg-5 offset-lg-2">
+                <div class="cv_edu_exp mt-3">
+                    {% for item in project %}
+                    {% if not forloop.counter0|divisibleby:2 %}
+
+                    <div class="cv_edu_exp_box mt-4">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="cv_edu_exp_year fw-bold text-custom position-relative">
+                                    <a href="{{item.url}}"> Link</a>
+
+                                </div>
+                                <div class="cb_edu_exp_detail">
+                                    <h4>{{item.title}} </h4>
+                                    {{ item.description|safe }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section" id="project">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <div class="text-center mx-auto section-main-title">
+                    <h2><span class="fw-bold"> Certifications</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4 pt-4">
+            <div class="col-lg-5">
+                <div class="cv_edu_exp mt-3">
+
+                    {% for certification in certifications %}
+                    {% if forloop.counter < 3 %} <div class=" mt-4">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <li class="cv_edu_exp_year fw-bold text-custom position-right">
+                                    {{certification.title}} </li>
+                            </div>
+                        </div>
+                </div>
+                {% endif %}
                 {% endfor %}
-              
             </div>
         </div>
         <div class="col-lg-5 offset-lg-2">
             <div class="cv_edu_exp mt-3">
-                {% for item in project %}
-                {% if not forloop.counter0|divisibleby:2 %}
-
-                <div class="cv_edu_exp_box mt-4">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="cv_edu_exp_year fw-bold text-custom position-relative">
-                                <a href="{{item.url}}" > Link</a>
-                             
-                            </div>
-                            <div class="cb_edu_exp_detail">
-                                <h4>{{item.title}} </h4>  
-                                {{ item.description|safe }} 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                     {% endif %}
-                {% endfor %}
-            </div>
-        </div>
-    </div>
-</div>
-</section>
-<section class="section" id="project">
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-lg-12">
-            <div class="text-center mx-auto section-main-title">
-                <h2><span class="fw-bold"> Certifications</span></h2>
-            </div>
-        </div>
-    </div>
-    <div class="row mt-4 pt-4">
-        <div class="col-lg-5">
-            <div class="cv_edu_exp mt-3">
-              
                 {% for certification in certifications %}
-                    {% if forloop.counter < 3 %}
-                <div class=" mt-4">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <li class="cv_edu_exp_year fw-bold text-custom position-right">
-                                {{certification.title}} </li>
-                        </div>
-                    </div>
-                </div>
-                    {% endif %}
-                {% endfor %}
-            </div>
-        </div>
-        <div class="col-lg-5 offset-lg-2">
-            <div class="cv_edu_exp mt-3">
-                {% for certification in certifications %}
-                    {% if forloop.counter > 2 %}
+                {% if forloop.counter > 2 %}
                 <div class=" mt-4">
                     <div class="row">
                         <div class="col-lg-12">
@@ -304,55 +301,55 @@ style="background-image: url('static/front/images/home-bg.jpg');" id="home">
                         </div>
                     </div>
                 </div>
-                    {% endif %}
+                {% endif %}
                 {% endfor %}
             </div>
         </div>
     </div>
-</div>
+    </div>
 </section>
 <section class="section bg-funfact">
-<div class="bg-overlay"></div>
-<div class="container z-index">
-    <div class="row" id="counter">
-        <div class="col-lg-3">
-            <div class="text-center lan_funfact p-4 mt-3 rounded text-white">
-                <div class="lan_fun_icon mb-3">
-                    <i class="mbri-timer h1"></i>
+    <div class="bg-overlay"></div>
+    <div class="container z-index">
+        <div class="row" id="counter">
+            <div class="col-lg-3">
+                <div class="text-center lan_funfact p-4 mt-3 rounded text-white">
+                    <div class="lan_fun_icon mb-3">
+                        <i class="mbri-timer h1"></i>
+                    </div>
+                    <h1 class="lan_fun_value mb-1" data-count="4">0</h1>
+                    <p class="lan_fun_name mb-0">Verified Certificate</p>
                 </div>
-                <h1 class="lan_fun_value mb-1" data-count="4">0</h1>
-                <p class="lan_fun_name mb-0">Verified Certificate</p>
             </div>
-        </div>
-        <div class="col-lg-3">
-            <div class="text-center lan_funfact p-4 mt-3 rounded text-white">
-                <div class="lan_fun_icon mb-3">
-                    <i class="mbri-gift h1"></i>
+            <div class="col-lg-3">
+                <div class="text-center lan_funfact p-4 mt-3 rounded text-white">
+                    <div class="lan_fun_icon mb-3">
+                        <i class="mbri-gift h1"></i>
+                    </div>
+                    <h1 class="lan_fun_value mb-1" data-count="26">1</h1>
+                    <p class="lan_fun_name mb-0">Completed Projects</p>
                 </div>
-                <h1 class="lan_fun_value mb-1" data-count="26">1</h1>
-                <p class="lan_fun_name mb-0">Completed Projects</p>
             </div>
-        </div>
-        <div class="col-lg-3">
-            <div class="text-center lan_funfact p-4 mt-3 rounded text-white">
-                <div class="lan_fun_icon mb-3">
-                    <i class="mbri-user h1"></i>
+            <div class="col-lg-3">
+                <div class="text-center lan_funfact p-4 mt-3 rounded text-white">
+                    <div class="lan_fun_icon mb-3">
+                        <i class="mbri-user h1"></i>
+                    </div>
+                    <h1 class="lan_fun_value mb-1" data-count="2389">201</h1>
+                    <p class="lan_fun_name mb-0">No. of Clients</p>
                 </div>
-                <h1 class="lan_fun_value mb-1" data-count="2389">201</h1>
-                <p class="lan_fun_name mb-0">No. of Clients</p>
             </div>
-        </div>
-        <div class="col-lg-3">
-            <div class="text-center lan_funfact p-4 mt-3 rounded text-white">
-                <div class="lan_fun_icon mb-3">
-                    <i class="mbri-users h1"></i>
+            <div class="col-lg-3">
+                <div class="text-center lan_funfact p-4 mt-3 rounded text-white">
+                    <div class="lan_fun_icon mb-3">
+                        <i class="mbri-users h1"></i>
+                    </div>
+                    <h1 class="lan_fun_value mb-1" data-count="8.5">2</h1>
+                    <p class="lan_fun_name mb-0">Solo Level</p>
                 </div>
-                <h1 class="lan_fun_value mb-1" data-count="8.5">2</h1>
-                <p class="lan_fun_name mb-0">Solo Level</p>
             </div>
         </div>
     </div>
-</div>
 </section>
 <!-- <section class="section bg-cta">
 <div class="bg-overlay"></div>
@@ -370,22 +367,22 @@ style="background-image: url('static/front/images/home-bg.jpg');" id="home">
 </div>
 </section> -->
 <section class="section " id="contact">
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-lg-12">
-            <div class="text-center mx-auto section-main-title">
-                <h2>Get In <span class="fw-bold">Touch</span></h2>
-                <div class="main-title-border">
-                    <i class="mdi mdi-asterisk"></i>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <div class="text-center mx-auto section-main-title">
+                    <h2>Get In <span class="fw-bold">Touch</span></h2>
+                    <div class="main-title-border">
+                        <i class="mdi mdi-asterisk"></i>
+                    </div>
+                    <p class="text-muted mx-auto mt-2">It is a long established fact that a reader will be
+                        distracted by the readable content of a page when looking at its layout.</p>
                 </div>
-                <p class="text-muted mx-auto mt-2">It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at its layout.</p>
             </div>
         </div>
-    </div>
-    <div class="row mt-4 pt-lg-4">
-        <div class="col-lg-4">
-            <!-- <div class="text-center mt-4">
+        <div class="row mt-4 pt-lg-4">
+            <div class="col-lg-4">
+                <!-- <div class="text-center mt-4">
                 <div>
                     <i class="mbri-mobile2 text-custom h2"></i>
                 </div>
@@ -394,104 +391,106 @@ style="background-image: url('static/front/images/home-bg.jpg');" id="home">
                     <p class="text-muted"></p>
                 </div>
             </div> -->
-            <div class="text-center mt-4">
-                <div>
-                    <i class="mbri-letter text-custom h2"></i>
+                <div class="text-center mt-4">
+                    <div>
+                        <i class="mbri-letter text-custom h2"></i>
+                    </div>
+                    <div class="mt-2">
+                        <p class="mb-0 fw-bold">Email At</p>
+                        <p class="text-muted">saurabhmathur9875@gmail.com</p>
+                    </div>
                 </div>
-                <div class="mt-2">
-                    <p class="mb-0 fw-bold">Email At</p>
-                    <p class="text-muted">saurabhmathur9875@gmail.com</p>
-                </div>
-            </div>
-            <div class="text-center mt-4">
-                <!-- <div>
+                <div class="text-center mt-4">
+                    <!-- <div>
                     <i class="mbri-pin text-custom h2"></i>
                 </div> -->
-                <!-- <div class="mt-2">
+                    <!-- <div class="mt-2">
                     <p class="mb-0 fw-bold">Website/p>
                     <p class="text-muted">  <a href="https://saurabhportfo.000.pe/"> My Recent Site  </a>  </p>
                 </div> -->
+                </div>
             </div>
-        </div>
-        <div class="col-lg-8">
-            <div class="contact_form">
-                <div id="message"></div>
-                <form  id="contactForm">
-                            @csrf
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="form-group mt-2 mb-3">
-                                <label for="name" class="fw-bold mb-2">Name</label>
-                                <input name="name" id="name" type="text" class="form-control"
-                                    placeholder="Your name..." >
+            <div class="col-lg-8">
+                <div class="contact_form">
+                    <div id="message"></div>
+                    <form id="contactForm">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group mt-2 mb-3">
+                                    <label for="name" class="fw-bold mb-2">Name</label>
+                                    <input name="name" id="name" type="text" class="form-control"
+                                        placeholder="Your name...">
+                                </div>
+                                <span id="name_error" class="text-danger text-small error-message"></span>
                             </div>
-                                            <span id="name_error" class="text-danger text-small error-message"></span>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group mt-2 mb-3">
-                                <label for="email" class="fw-bold mb-2">Email address</label>
-                                <input name="email" id="email" type="email" class="form-control"
-                                    placeholder="Your email..." >
+                            <div class="col-lg-6">
+                                <div class="form-group mt-2 mb-3">
+                                    <label for="email" class="fw-bold mb-2">Email address</label>
+                                    <input name="email" id="email" type="email" class="form-control"
+                                        placeholder="Your email...">
+                                </div>
+                                <span id="email_error" class="text-danger text-small error-message"></span>
                             </div>
-                                            <span id="email_error" class="text-danger text-small error-message"></span>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="form-group mt-2 mb-3">
-                                <label for="subject" class="fw-bold mb-2">Subject</label>
-                                <input type="text"  name="subject"  class="form-control" id="subject"
-                                    placeholder="Your Subject.."  />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="form-group mt-2 mb-3">
-                                <label for="comments" class="fw-bold mb-2">Message</label>
-                                <textarea name="message" id="message" rows="4" class="form-control"
-                                    placeholder="Your message..."></textarea>
+                            <div class="col-lg-12">
+                                <div class="form-group mt-2 mb-3">
+                                    <label for="subject" class="fw-bold mb-2">Subject</label>
+                                    <input type="text" name="subject" class="form-control" id="subject"
+                                        placeholder="Your Subject.." />
+                                </div>
+                                <span id="subject_error" class="text-danger text-subject error-message"></span>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12 text-right">
-                            <button type="submit" id="submit" name="send" class="submitBnt btn btn-custom">Send
-                                Message</button>
-                            <div id="simple-msg"></div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group mt-2 mb-3">
+                                    <label for="comments" class="fw-bold mb-2">Message</label>
+                                    <textarea name="message" id="message" rows="4" class="form-control"
+                                        placeholder="Your message..."></textarea>
+                                </div>
+                                <span id="message_error" class="text-danger text-message error-message"></span>
+                            </div>
                         </div>
-                    </div>
-                </form>
+                        <div class="row">
+                            <div class="col-sm-12 text-right">
+                                <button type="submit" id="submit" name="send" class="submitBnt btn btn-custom">Send
+                                    Message</button>
+                                <div id="simple-msg"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-</div>
 </section>
 <section class="bg-light">
-<div class="container">
-    <div class="row pt-4 pb-4">
-        <div class="col-lg-12">
-            <div class="d-flex align-items-center justify-content-between">
-                <div class="float-start mt-2 mb-2">
-                    <p class="copy-rights text-muted mb-0">
-                        <script>document.write(new Date().getFullYear())</script> &copy; Saurabh. Design by RealmS
-                        <a class="text-muted" href="#!">
-                        </a>
-                    </p>
-                </div>
-                <div class="float-end mt-2 mb-2">
-                    <ul class="list-inline fot_social mb-0">
-                        <li class="list-inline-item"><a href="javascript:void(0)"
-                                class="social-icon text-muted"><i class="mdi mdi-facebook"></i></a></li>
-                        <li class="list-inline-item"><a href="javascript:void(0)"
-                                class="social-icon text-muted"><i class="mdi mdi-twitter"></i></a></li>
-                        <li class="list-inline-item"><a href="javascript:void(0)"
-                                class="social-icon text-muted"><i class="mdi mdi-linkedin"></i></a></li>
-                        <li class="list-inline-item"><a href="javascript:void(0)"
-                                class="social-icon text-muted"><i class="mdi mdi-google-plus"></i></a></li>
-                    </ul>
+    <div class="container">
+        <div class="row pt-4 pb-4">
+            <div class="col-lg-12">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="float-start mt-2 mb-2">
+                        <p class="copy-rights text-muted mb-0">
+                            <script>document.write(new Date().getFullYear())</script> &copy; Saurabh. Design by RealmS
+                            <a class="text-muted" href="#!">
+                            </a>
+                        </p>
+                    </div>
+                    <div class="float-end mt-2 mb-2">
+                        <ul class="list-inline fot_social mb-0">
+                            <li class="list-inline-item"><a href="javascript:void(0)" class="social-icon text-muted"><i
+                                        class="mdi mdi-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0)" class="social-icon text-muted"><i
+                                        class="mdi mdi-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0)" class="social-icon text-muted"><i
+                                        class="mdi mdi-linkedin"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0)" class="social-icon text-muted"><i
+                                        class="mdi mdi-google-plus"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 </section>
 {% endblock content %}
