@@ -17,7 +17,9 @@ def index(request):
 
     skills = Home.objects.filter(slug="skills")
     experience = Home.objects.filter(slug="experience")
-    project = Home.objects.filter(slug="project")
+    project = Home.objects.filter(slug="project").order_by('-id')
+
+
     certifications = Home.objects.filter(slug="certifications")
 
     return render(request ,'front/index.html' , {'home': home , 'aboutus': aboutus , 'recenteducation': recenteducation , 'honors': honors , 'skills': skills , 'experience': experience , 'project': project , 'certifications': certifications})
