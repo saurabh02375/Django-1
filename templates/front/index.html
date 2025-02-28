@@ -83,14 +83,15 @@
         </div>
         <div class="row mt-5">
             <div class="col-lg-6">
+                <h2><span class="fw-bold">Programming Languages </span> </h2>
                 <div class="progress-bars skill-custom">
                     {% for item in skills %}
                     {% if forloop.counter <= 5 %} <div class="clearfix">
                         <div class="text-dark fw-bold float-left">{{item.title}}</div>
-                        <div class="text-muted float-right">80%</div>
+                        <!-- <div class="text-muted float-right">80%</div> -->
                 </div>
                 <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="0" aria-valuemin="0"
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0"
                         aria-valuemax="100"></div>
                 </div>
                 {% endif %}
@@ -98,20 +99,200 @@
             </div>
         </div>
         <div class="col-lg-6">
+            <h2><span class="fw-bold">Databases </span> </h2>
             <div class="progress-bars skill-custom">
                 {% for item in skills %}
                 {% if forloop.counter > 5 %}
 
                 <div class="clearfix">
                     <div class="text-dark fw-bold float-left">{{item.title}}</div>
-                    <div class="text-muted float-right">96%</div>
                 </div>
                 <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 86%" aria-valuenow="0" aria-valuemin="0"
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0"
                         aria-valuemax="100"></div>
                 </div>
                 {% endif %}
                 {% endfor %}
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <h2><span class="fw-bold">Machine Learning / AI </span> </h2>
+            <div class="progress-bars skill-custom">
+              
+                <div class="clearfix">
+                    <div class="text-dark fw-bold float-left">TensorFlow</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+                
+                <div class="clearfix">
+                    <div class="text-dark fw-bold float-left">OpenCV</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+
+                <div class="clearfix">
+                    <div class="text-dark fw-bold float-left">Natural Language Processing (NLP)</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <h2><span class="fw-bold">Version Control & Cloud Technologies </span> </h2>
+            <div class="progress-bars skill-custom">
+              
+                <div class="clearfix">
+                    <div class="text-dark fw-bold float-left">Git</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+                
+                <div class="clearfix">
+                    <div class="text-dark fw-bold float-left">GitHub</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+
+                <div class="clearfix">
+                    <div class="text-dark fw-bold float-left">Docker (for containerization)</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+
+
+                <div class="clearfix">
+                    <div class="text-dark fw-bold float-left">Railway (App Hosting & Management)</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+
+                <div class="clearfix">
+                    <div class="text-dark fw-bold float-left">Render (Application Deployment)</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <h2><span class="fw-bold">Frameworks </span> </h2>
+            <div class="progress-bars skill-custom">
+              
+                <div class="clearfix">
+                    <div class="text-dark fw-bold float-left">Laravel(PHP)</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+                
+                <div class="clearfix">
+                    <div class="text-dark fw-bold float-left">Django (Python)</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+
+                <div class="clearfix">
+                    <div class="text-dark fw-bold float-left">Flask (Python)</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+
+
+                <div class="clearfix">
+                    <div class="text-dark fw-bold float-left">Express.js (Node.js)</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <h2><span class="fw-bold">Frontend Technologies & Libraries
+            </span> </h2>
+            <div class="progress-bars skill-custom">
+              
+                <div class="clearfix">
+                    <div class="text-dark fw-bold float-left">HTML5 & CSS</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+                
+                <div class="clearfix">
+                    <div class="text-dark fw-bold float-left">Bootstrap</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+
+                <div class="clearfix">
+                    <div class="text-dark fw-bold float-left">jQuery</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+
+                <div class="clearfix">
+                    <div class="text-dark fw-bold float-left">JavaScript (ES6+)</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+
+                <div class="clearfix">
+                    <div class="text-dark fw-bold float-left">JSON, AJAX (Asynchronous data loading)</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <h2><span class="fw-bold">API Development
+            </span> </h2>
+            <div class="progress-bars skill-custom">
+              
+                <div class="clearfix">
+                    <div class="text-dark fw-bold float-left">RESTful APIs</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+        
+
             </div>
         </div>
     </div>

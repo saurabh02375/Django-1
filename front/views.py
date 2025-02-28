@@ -1,11 +1,12 @@
-from django.shortcuts import render
+from django.shortcuts import render ,redirect
 from home.models import Post , Home
 from django.core.mail import send_mail
 from django.conf import settings
 from django.http import JsonResponse
 from django.core.exceptions import ValidationError
 from django.core.validators import validate_email
-
+from .forms import LoginForm
+from django.contrib.auth import authenticate, login
 # Create your views here.
 
 def index(request):
@@ -65,3 +66,30 @@ def aboutus(request):
             return JsonResponse({'success': True})
     else:
         return JsonResponse({'success': False})
+
+
+
+
+def userlogin(request):
+    if request.method == 'POST':
+        form = LoginForm(request.POST)
+        if form.is_valid():
+            email = form.cleaned_data['email']
+            password = form.cleaned_data['password']
+            
+            # Authenticate the user based on email and password
+            user = authenticate(request, username=email, password=password)
+
+            if user is not None:
+                # User is authenticated, so log the user in
+                login(request, user)
+                return redirect('home')  # Redirect to the home page or dashboard after successful login
+            else:
+                # Invalid credentials (email or password incorrect)
+                form.add_error(None, "Invalid email or password")
+        
+    else:
+        form = LoginForm()  # For GET request, display an empty form
+
+    return render(request, 'home/login.html', {'form': form})
+

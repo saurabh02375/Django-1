@@ -11,5 +11,5 @@ urlpatterns = [
     path("savepost", views.savepost , name='savepost'),
     path('deletepost/<int:post_id>/', views.delete_post, name='delete_post'),
     path('edit-post/<int:post_id>/', views.editpost, name='editpost'),
-     path("home", views.home , name='home'),
+    path("home", views.home , name='home'),
 ]
