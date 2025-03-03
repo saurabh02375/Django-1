@@ -332,14 +332,11 @@ ul li, ol li {
 
 
 </script>
+
+
+
 <script>
   $(document).ready(function () {
-
-
-
-
-            
-      
     $('#addMoreButton').click(function () {
       $('#inputContainer').append(`
         <div class="form-group">
@@ -409,20 +406,13 @@ ul li, ol li {
     </div>
   `);
 
-  // Re-initialize ClassicEditor for dynamically added textareas
-  $('.pditor').each(function () {
-    if (!$(this).data('editor-initialized')) {
-      ClassicEditor
-        .create(this)
-        .then(editor => {
-          $(this).data('editor-initialized', true); // Prevent re-initialization
-        })
-        .catch(error => {
-          console.error(error);
-        });
-    }
+  // Re-initialize CKEditor for the newly added textarea
+  CKEDITOR.replace($('.pditor').last()[0], {
+    allowedContent: true, // Ensure classes in <li> are allowed
+    entities: false
   });
 });
+
 
     $('#addCertificationButton').click(function () {
       $('#certificationsContainer').append(`
