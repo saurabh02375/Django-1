@@ -103,6 +103,7 @@ ALLOWED_HOSTS = [
     'django-1-a5e8.onrender.com',
      '127.0.0.1',
      'saurabhrealm.cloud',
+    'saurabhxp.space',
      'localhost'
     
     # Add other allowed hosts if necessary
@@ -161,6 +162,7 @@ CSRF_TRUSTED_ORIGINS = [
     'http://localhost:8000',  # For non-secure HTTP
     'https://localhost:8000',  # For secure HTTPS (if you are using HTTPS)
     'http://127.0.0.1:8000',  # If using 127.0.0.1 instead of localhost
+    'saurabhxp.space',
 ]
 
 
