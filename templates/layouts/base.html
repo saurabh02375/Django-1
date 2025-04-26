@@ -71,6 +71,14 @@
     <!-- Specific Page JS goes HERE  -->
     {% block javascripts %}
     {{ block.super }}
+    <script src="https://cdn.ckeditor.com/ckeditor5/44.1.0/ckeditor5.umd.js"></script>
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#editor'))
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
     {% endblock javascripts %}
 
 </body>
